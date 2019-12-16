@@ -24,6 +24,13 @@
             font-family: sans-serif;
         }
 
+        .body4 {
+            text-align: center;
+            background-image: url(assets/jade-stephens-X2rbZBast0E-unsplash.jpg);
+            background-position: center;
+            font-family: sans-serif;
+        }
+
         #myDIV {
             width: 500px;
             height: 500px;
@@ -70,6 +77,10 @@
         #address {
             display: none;
         }
+
+        #projects {
+            display: none;
+        }
     </style>
     <script>
         function clickme(name) {
@@ -93,6 +104,13 @@
                 document.getElementById("address").style.display = "block"
                 document.getElementById("address").classList.add("address");
             }
+            else if (name == 'projects') {
+                var appBody = document.getElementById('appBody').className = 'body4';
+                document.getElementById("about").style.display = "none";
+                document.getElementById("contact").style.display = "none";
+                document.getElementById("address").style.display = "none";
+                document.getElementById("projects").style.display = "block"
+            }
         }
 
 
@@ -106,6 +124,7 @@
         <span><button onclick="clickme('about')">About Me</button>
             <button onclick="clickme('contact')">Contact Me</button>
             <button onclick="clickme('address')">Address</button></span>
+        <button onclick="clickme('projects')">Projects</button></span>
     </div>
     <div id="about">
         <p class="Information">
@@ -134,6 +153,10 @@
             Zip Code :06902 <br>
             City : Stamford <br>
             State: Conneticut</p>
+    </div>
+    <div id="projects">
+        <h2 style="text-align:center;">Project Information</h2>
+
     </div>
 
 </body>
