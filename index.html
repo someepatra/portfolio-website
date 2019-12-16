@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Mausumi</title>
+    <style>
+        .body1 {
+            text-align: center;
+            background-image: url(assets/bg-2.jpg);
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+        .body2 {
+            text-align: center;
+            background-image: url(assets/bg-3.jpg);
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+        .body3 {
+            text-align: center;
+            background-image: url(assets/bg-1.jpg);
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+        #myDIV {
+            width: 500px;
+            height: 500px;
+            background-color: lightblue;
+        }
+
+        #name-stle {
+            align-content: center;
+            font-size: 14px;
+            text-align: justify;
+            padding: 5px;
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        #information {
+            align-content: center;
+            font-size: 12px;
+            padding: 5px;
+            font-family: sans-serif;
+            font-style: normal;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            background-color: red;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        #contact {
+            display: none;
+        }
+
+        #about {
+            display: none;
+        }
+
+        #address {
+            display: none;
+        }
+    </style>
+    <script>
+        function clickme(name) {
+            console.log(name);
+            if (name == 'about') {
+                var appBody = document.getElementById('appBody').className = 'body1';
+                document.getElementById("about").style.display = "block";
+                document.getElementById("about").classList.add("about");
+                document.getElementById("contact").style.display = "none";
+                document.getElementById("address").style.display = "none";
+            } else if (name == 'contact') {
+                var appBody = document.getElementById('appBody').className = 'body2';
+                document.getElementById("about").style.display = "none";
+                document.getElementById("contact").style.display = "block";
+                document.getElementById("contact").classList.add("contact");
+                document.getElementById("address").style.display = "none"
+            } else if (name == 'address') {
+                var appBody = document.getElementById('appBody').className = 'body3';
+                document.getElementById("about").style.display = "none";
+                document.getElementById("contact").style.display = "none";
+                document.getElementById("address").style.display = "block"
+                document.getElementById("address").classList.add("address");
+            }
+        }
+
+
+    </script>
+</head>
+
+<body id="appBody" class="body1">
+    <img src="assets/mausumi.jpg">
+    <div>
+        <p class="name-stle">Hi! I'm Mausumi Patra</p>
+        <span><button onclick="clickme('about')">About Me</button>
+            <button onclick="clickme('contact')">Contact Me</button>
+            <button onclick="clickme('address')">Address</button></span>
+    </div>
+    <div id="about">
+        <p class="Information">
+            <ul style="list-style-type:none;">
+                <li>Inspiring computer science teacher experienced in engaging students in their own learning and
+                    attaining high levels of achievement in the use of computers</li>
+                <li> Developed and implemented effective computer coding curriculum focusing on efficient programming
+                </li>
+                <li>Committed to innovative teaching practices for adult education </li>
+                <li>Proficient computer programming knowledge in C, C++ and Core Java, MS Office</li>
+                <li>Experience teaching students from elementary school through adults</li>
+                <li>Classroom and computer lab management skills</li>
+                <li>Creative and innovative</li>
+                <li>Self-motivated and highly organized</li>
+            </ul>
+        </p>
+    </div>
+    <div id="contact">
+        <h2 style="text-align:center;">Contact Information</h2>
+        <p class="Information" style="text-align:center;">Phone Number : +1-203 822 0243 <br>
+            Email ID: someepatra@gmail.com</p>
+    </div>
+    <div id="address">
+        <h2 style="text-align:center;">Address</h2>
+        <p class="Information" style="text-align:center;">71 Strawberry Hill Avenue,Apt#310 <br>
+            Zip Code :06902 <br>
+            City : Stamford <br>
+            State: Conneticut</p>
+    </div>
+
+</body>
