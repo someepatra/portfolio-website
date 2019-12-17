@@ -81,6 +81,16 @@
         #projects {
             display: none;
         }
+
+        .screenImg {
+            width: 500px;
+            height: 500px;
+            border: 1px;
+        }
+
+        .navBody {
+            text-align: right;
+        }
     </style>
     <script>
         function clickme(name) {
@@ -91,18 +101,24 @@
                 document.getElementById("about").classList.add("about");
                 document.getElementById("contact").style.display = "none";
                 document.getElementById("address").style.display = "none";
+                document.getElementById("projects").style.display = "none";
+
             } else if (name == 'contact') {
                 var appBody = document.getElementById('appBody').className = 'body2';
                 document.getElementById("about").style.display = "none";
                 document.getElementById("contact").style.display = "block";
                 document.getElementById("contact").classList.add("contact");
                 document.getElementById("address").style.display = "none"
+                document.getElementById("projects").style.display = "none";
+
             } else if (name == 'address') {
                 var appBody = document.getElementById('appBody').className = 'body3';
                 document.getElementById("about").style.display = "none";
                 document.getElementById("contact").style.display = "none";
                 document.getElementById("address").style.display = "block"
                 document.getElementById("address").classList.add("address");
+                document.getElementById("projects").style.display = "none";
+
             }
             else if (name == 'projects') {
                 var appBody = document.getElementById('appBody').className = 'body4';
@@ -120,6 +136,13 @@
 <body id="appBody" class="body1">
     <img src="assets/mausumi.jpg">
     <div>
+        <nav class="navBody">
+            <a
+                href="https://drive.google.com/file/d/0B73tz0hpQD67OS1uV1lNU0loSXVSbVU3Zzh1WVA4M2IzUkQ4/view?ts=5de41a05">Resume</a>
+            <a href="https://www.linkedin.com/in/mausumi-patra/">LinkedIn</a> |
+            <a href="https://git.generalassemb.ly/someepatra/">Git Hub</a> |
+            <a href="/jquery/">Cover Latter</a>
+        </nav>
         <p class="name-stle">Hi! I'm Mausumi Patra</p>
         <span><button onclick="clickme('about')">About Me</button>
             <button onclick="clickme('contact')">Contact Me</button>
@@ -156,6 +179,14 @@
     </div>
     <div id="projects">
         <h2 style="text-align:center;">Project Information</h2>
+        <h2>NEWSAPI</h2>
+        <img class="screenImg" src="assets/Screen Shot 2019-12-16 at 4.46.35 PM.png">
+        <h2>Patient Portal</h2>
+        <img class="screenImg" src="assets/Screen Shot 2019-12-16 at 4.44.57 PM.png">
+        <h2>Space Hunter</h2>
+        <img class="screenImg" src="assets/Screen Shot 2019-12-16 at 4.47.49 PM.png">
+        <h2>Alphabet Game</h2>
+        <!-- <img src="assets/mausumi.jpg"> -->
 
     </div>
 
