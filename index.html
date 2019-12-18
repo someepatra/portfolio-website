@@ -7,21 +7,30 @@
             text-align: center;
             background-image: url(assets/bg-2.jpg);
             background-position: center;
+            background-size: cover 100%;
+            background-repeat: no-repeat;
             font-family: sans-serif;
+            height: 100vh;
         }
 
         .body2 {
             text-align: center;
             background-image: url(assets/bg-3.jpg);
             background-position: center;
+            background-size: cover 100%;
+            background-repeat: no-repeat;
             font-family: sans-serif;
+            height: 100vh;
         }
 
         .body3 {
             text-align: center;
             background-image: url(assets/bg-1.jpg);
             background-position: center;
+            background-size: cover 100%;
+            background-repeat: no-repeat;
             font-family: sans-serif;
+            height: 100vh;
         }
 
         .body4 {
@@ -47,12 +56,14 @@
             font-weight: bold;
         }
 
-        #information {
+        .information {
             align-content: center;
-            font-size: 12px;
+            font-size: 20px;
             padding: 5px;
             font-family: sans-serif;
             font-style: normal;
+            max-width: 780px;
+            margin: 30px auto;
         }
 
         a {
@@ -72,6 +83,7 @@
 
         #about {
             display: none;
+            margin: 0 auto;
         }
 
         #address {
@@ -90,7 +102,7 @@
 
         .navBody {
             overflow: hidden;
-            background-color: #333;
+            background-color: transparent;
         }
 
         .navBody a {
@@ -112,18 +124,26 @@
 
         .project1 {
             border: solid 2px royalblue;
+            max-width: 580px;
+            margin: 20px auto;
         }
 
         .project2 {
             border: solid 2px royalblue;
+            max-width: 580px;
+            margin: 20px auto;
         }
 
         .project3 {
             border: solid 2px royalblue;
+            max-width: 580px;
+            margin: 20px auto;
         }
 
         .project4 {
             border: solid 2px royalblue;
+            max-width: 580px;
+            margin: 20px auto;
         }
     </style>
     <script>
@@ -183,26 +203,10 @@
         </span>
     </div>
     <div id="about">
-        <p class="Information">
-            <ul style="list-style-type:none;">
-                <p>
-                    Inspiring computer science teacher experienced in engaging students in their own learning and
-                    attaining high levels of achievement in the use of computers. Developed and implemented effective
-                    computer coding curriculum focusing on efficient programming. Committed to innovative teaching
-                    practices for adult education.
-                </p>
-                <!-- <li>Inspiring computer science teacher experienced in engaging students in their own learning and
-                    attaining high levels of achievement in the use of computers</li>
-                <li> Developed and implemented effective computer coding curriculum focusing on efficient programming
-                </li>
-                <li>Committed to innovative teaching practices for adult education </li>
-                <li>Proficient computer programming knowledge in C, C++ and Core Java, MS Office</li>
-                <li>Experience teaching students from elementary school through adults</li>
-                <li>Classroom and computer lab management skills</li>
-                <li>Creative and innovative</li>
-                <li>Self-motivated and highly organized</li> -->
-            </ul>
-        </p>
+        <p class="information">Inspiring computer science teacher experienced in engaging students in their own learning
+            and attaining high levels of achievement in the use of computers. Developed and implemented effective
+            computer coding curriculum focusing on efficient programming. Committed to innovative teaching practices for
+            adult education.</p>
     </div>
     <div id="contact">
         <h2 style="text-align:center;">Contact Information</h2>
@@ -225,6 +229,7 @@
             <br><br>
             <a href="http://teatime-news.surge.sh/">Tea Time News</a>
             <a href="https://github.com/someepatra/newsapp/blob/master/README.md">Git Hub</a>
+            <br><br><br>
         </div>
         <div class="project2">
             <h2>Patient Portal</h2>
@@ -232,7 +237,7 @@
             <br><br>
             <a href="https://patientsportal.herokuapp.com">Patient Portal</a>
             <a href="https://github.com/someepatra/Patient_portal/blob/master/README.md">Git Hub</a>
-
+            <br><br><br>
         </div>
         <div class="project3">
             <h2>Space Hunter</h2>
@@ -241,6 +246,7 @@
             <a href="http://spacehunter.surge.sh">Space Hunter</a>
             <a href="https://github.com/JustinKlass/spaceHunter-FrontEnd/blob/master/frontend/README.md">Git Hub
             </a>
+            <br><br><br>
 
 
         </div>
@@ -248,9 +254,10 @@
             <h2>Alphabet Game</h2>
             <img class="screenImg" src="assets/Screen Shot 2019-12-17 at 3.17.14 PM.png">
             <br><br>
-            <a href="">Alphabet Game</a>
+            <a href="https://alphabets-game.surge.sh">Alphabet Game</a>
             <a href="https://github.com/someepatra/alphabets-client/blob/master/README.md
             ">Git Hub</a>
+            <br><br><br>
 
         </div>
     </div>
